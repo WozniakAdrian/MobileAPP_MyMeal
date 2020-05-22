@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">MyMeal</string>
+
+    <string name="ZeroZero">00</string>
+    <string name="CalDay">CAL/DAY</string>
+
+    <!-- Firebase DB credentials   -->
+    <string name="FirebaseDatabaseName">MyMealDB</string>
+    <!-- END Firebase DB credentials   -->
+
+    <!-- ACTIVITY MAIN   -->
+    <string name="celcius_sign">°C</string>
+    <string name="contentDescription_weatherIco">Current weather image</string>
+    <string name="temerature_default_value">00</string>
+    <!-- END ACTIVITY MAIN   -->
+
+    <!-- ACTIVITY LOGIN    -->
+    <string name="textView_signIn">Don\'t have account? Register here</string>
+    <string name="textView_forgotpassword">Forgot password?</string>
+    <string name="editText_hint_username">Email</string>
+    <string name="editText_hint_password">Password</string>
+    <string name="button_login">Login</string>
+    <!-- END ACTIVITY LOGIN    -->
+
+    <!-- LIST ROW   -->
+    <string name="list_row_image_description">photo of single food item</string>
+    <string name="lsit_row_title">title</string>
+    <string name="lsit_row_serving_quantity">00.00</string>
+    <string name="list_row_serving_unit">unit</string>
+    <string name="lsit_row_serving_grams">00.0 g</string>
+    <string name="lsit_row_calories">00.00 CAL</string>
+    <!-- END LIST ROW   -->
+
+    <!-- LAYOUT MENU   -->
+    <string name="layout_menu_user_avatar">user avatar</string>
+    <string name="layout_menu_microphone_button">speach to text button</string>
+    <string name="layout_menu_add_calories">add calories button</string>
+    <string name="layout_menu_camera">food recognition button</string>
+    <string name="layout_menu_search_nutritionix">search for food button</string>
+    <string name="layout_menu_sum_calories">CAL: 00</string>
+    <string name="layout_menu_input_calories_data">What did you eat?</string>
+    <string name="layout_menu_"></string>
+    <!-- END LAYOUT MENU   -->
+
+    <!-- MENU DRAWER   -->
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
+    <!-- END MENU DRAWER   -->
+
+    <!-- MENU HEADER   -->
+    <string name="menu_header_name">Username</string>
+    <!-- END MENU HEADER   -->
+
+    <!-- SEARCH FRAGMENT   -->
+    <string name="searchFrag_summary">Summary: </string>
+    <!-- END SEARCH FRAGMENT   -->
+
+    <!-- PROFILE FRAGMENT   -->
+    <string name="profileFrag_Save">Save</string>
+    <string name="profileFrag_City">City</string>
+    <string name="profileFrag_Email">Email</string>
+    <string name="profileFrag_CaloriesDailyDemand">Calories daily demand</string>
+    <string name="profileFrag_Blank"></string>
+    <!-- END PROFILE FRAGMENT   -->
+
+    <!-- CALCULATE BMR FRAGMENT   -->
+    <string name="fragCalcBRM_Male">Male</string>
+    <string name="fragCalcBRM_Female">Female</string>
+    <string name="fragCalcBRM_im">i\'m</string>
+    <!-- END CALCULATE BMR FRAGMENT   -->
+
+    <!-- END CALCULATE BMR FRAGMENT RESULT  -->
+    <string name="fragBMRResult_bmiTitle">Body mass index</string>
+    <string name="fragBMRResult_BmiDecimal">00.</string>
+    <string name="fragBMRResult_BmiAfterDot">00</string>
+
+    <string name="fragBMRResult_bmiStarvation">Starvation</string>
+    <string name="fragBMRResult_bmiEmaciation">Emaciation</string>
+    <string name="fragBMRResult_bmiUnderweight">Underweight</string>
+    <string name="fragBMRResult_bmiIdealWeight">Ideal weight</string>
+    <string name="fragBMRResult_bmiOverweight">Overweight</string>
+    <string name="fragBMRResult_bmiFirstDegreeObesity">First degree obesity</string>
+    <string name="fragBMRResult_bmiSecondDegreeObesity">Second degree obesity</string>
+    <string name="fragBMRResult_bmiExtremeObesity">Extreme obesity</string>
+
+    <string name="fragBMRResult_BmrTitle">Basal Metabolic Rate</string>
+    <string name="fragBMRResult_decisionTitle">I want</string>
+    <string name="fragBMRResult_decisionFooter">my weight</string>
+    <string name="fragBMRResult_btnLose">Lose</string>
+    <string name="fragBMRResult_btnStay">Stay</string>
+    <string name="fragBMRResult_btnGain">Gain</string>
+
+    <string name="fragBMRResult_resultTitle">You should consume</string>
+    <string name="fragBMRResult_resultFooter">to achieve your goal</string>
+    <!-- END CALCULATE BMR FRAGMENT RESULT  -->
+
+
+    <!-- FRAGMENT CALORIES CALC  -->
+    <string name="fragCalCalc_Title">Summary</string>
+    <string name="fragCalCalc_LastMealTitle">Last meal was</string>
+    <string name="fragCalCalc_CalLeft">Cal left</string>
+    <string name="fragCalCalc_CalBurned">Cal burned</string>
+    <string name="fragCalCalc_Fat">Fat</string>
+    <string name="fragCalCalc_Carb">Carb</string>
+    <string name="fragCalCalc_Protein">Protein</string>
+    <string name="fragCalCalc_SaturatedFat">Saturated Fat</string>
+    <string name="fragCalCalc_Sugars">Sugars</string>
+    <string name="fragCalCalc_DietaryFiber">Dietary fiber</string>
+    <string name="fragCalCalc_Cholesterol">Cholesterol</string>
+    <string name="fragCalCalc_Potassium">Potassium</string>
+    <string name="fragCalCalc_Sodium">Sodium</string>
+    <string name="fragCalCalc_SuffixCAL">CAL</string>
+
+    <!-- END FRAGMENT CALORIES CALC  -->
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

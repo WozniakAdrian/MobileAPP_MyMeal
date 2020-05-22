@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/light"
+
+            android:orientation="vertical"
+          >
+
+            <TextView
+                android:id="@+id/fragCalCalc_Title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Summary"
+                android:textAlignment="center"
+                android:textColor="@color/dark"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/fragCalCalc_Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@color/light"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fragCalCalc_City"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:padding="2dp"
+                    android:text="@string/profileFrag_City"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark" />
+
+                <TextView
+                    android:id="@+id/fragCalCalc_Temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:padding="2dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/ZeroZero"
+                    android:textColor="@color/dark" />
+
+                <TextView
+                    android:id="@+id/fragCalCalc_CelciusDegrees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:padding="2dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/celcius_sign"
+                    android:textColor="@color/dark" />
+
+                <ImageView
+                    android:id="@+id/fragCalCalc_WeatherIco"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/weather_clear_sky" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/light"
+
+        android:gravity="center"
+        android:padding="15dp">
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/fragCalCalc_ProgressBar"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            app:cpb_background_progressbar_color="@color/secondary"
+            app:cpb_background_progressbar_width="15dp"
+            app:cpb_progress="0"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progressbar_color="@color/primary"
+            app:cpb_progressbar_width="15dp"
+
+            app:cpb_round_border="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/fragCalCalc_ConsumedCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ZeroZero"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/dark"
+            android:textSize="36sp" />
+        <TextView
+            android:id="@+id/fragCalCalc_SuffixCAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragCalCalc_SuffixCAL"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/dark"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+
+
+            android:layout_weight="1"
+            android:background="@color/light"
+
+            android:orientation="vertical"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/fragCalCalc_LastMealTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragCalCalc_LastMealTitle"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+            <TextView
+                android:id="@+id/fragCalCalc_LastMealValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ZeroZero"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+
+            android:layout_weight="1"
+            android:background="@color/light"
+
+            android:orientation="vertical"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/fragCalCalc_CalLeft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragCalCalc_CalLeft"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+            <TextView
+                android:id="@+id/fragCalCalc_CalLeftValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ZeroZero"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/light"
+
+            android:orientation="vertical"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/fragCalCalc_CalBurned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragCalCalc_CalBurned"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+            <TextView
+                android:id="@+id/fragCalCalc_CalBurnedValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ZeroZero"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/light"
+
+            android:orientation="vertical"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/fragCalCalc_Fat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragCalCalc_Fat"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+            <ProgressBar
+                android:id="@+id/fragCalCalc_FatProgressbar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:layout_marginHorizontal="1dp"
+                android:progressDrawable="@drawable/progressbar_horizontal_border_primary"
+                />
+
+            <TextView
+                android:id="@+id/fragCalCalc_FatValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ZeroZero"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragCalCalc_CarbLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@color/light"
+
+            android:orientation="vertical"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/fragCalCalc_Carb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragCalCalc_Carb"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+            <ProgressBar
+                android:id="@+id/fragCalCalc_CarbProgressBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:layout_marginHorizontal="1dp"
+                android:progressDrawable="@drawable/progressbar_horizontal_border_primary"
+               />
+
+            <TextView
+                android:id="@+id/fragCalCalc_CarbValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ZeroZero"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@color/light"
+
+            android:orientation="vertical"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/fragCalCalc_Protein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragCalCalc_Protein"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+            <ProgressBar
+                android:id="@+id/fragCalCalc_ProteinProgressbar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:layout_marginHorizontal="1dp"
+                android:progressDrawable="@drawable/progressbar_horizontal_border_primary"
+                 />
+
+            <TextView
+                android:id="@+id/fragCalCalc_ProteinValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ZeroZero"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/light"
+            android:orientation="vertical"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/fragCalCalc_SaturatedFatTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragCalCalc_SaturatedFat"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+            <TextView
+                android:id="@+id/fragCalCalc_SaturatedFatValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ZeroZero"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/light"
+            android:orientation="vertical"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/fragCalCalc_SugarsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragCalCalc_Sugars"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+            <TextView
+                android:id="@+id/fragCalCalc_SugarsValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ZeroZero"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/light"
+            android:orientation="vertical"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/fragCalCalc_DieteryFiberTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragCalCalc_DietaryFiber"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+            <TextView
+                android:id="@+id/fragCalCalc_DietaryFiberValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ZeroZero"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/light"
+            android:orientation="vertical"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/fragCalCalc_CholesterolTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragCalCalc_Cholesterol"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+            <TextView
+                android:id="@+id/fragCalCalc_CholesterolValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ZeroZero"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/light"
+            android:orientation="vertical"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/fragCalCalc_PotassiumTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragCalCalc_Potassium"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+            <TextView
+                android:id="@+id/fragCalCalc_PotassiumValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ZeroZero"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/light"
+            android:orientation="vertical"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/fragCalCalc_SodiumTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragCalCalc_Sodium"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+            <TextView
+                android:id="@+id/fragCalCalc_SodiumValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ZeroZero"
+                android:textAlignment="center"
+                android:textColor="@color/dark" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/fragBMRResult_LayoutBMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/elevation_shadow_background_light"
+        android:orientation="vertical"
+        android:elevation="5dp"
+
+        android:paddingVertical="15dp">
+
+        <TextView
+            android:id="@+id/fragBMRResult_bmiTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragBMRResult_bmiTitle"
+            android:textAlignment="center"
+            android:textColor="@color/dark" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/fragBMRResult_bmiDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/fragBMRResult_BmiDecimal"
+                android:textColor="@color/dark"
+                android:textSize="62dp" />
+
+            <TextView
+                android:id="@+id/fragBMRResult_bmiAfterDot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/fragBMRResult_BmiAfterDot"
+                android:textColor="@color/dark"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fragBMRResult_bmiWeightStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/danger"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragBMRResult_LayoutBMR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/elevation_shadow_background_light"
+        android:orientation="vertical"
+        android:elevation="5dp"
+
+        android:paddingVertical="15dp"
+        >
+
+        <TextView
+            android:id="@+id/fragBMRResult_BMRTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragBMRResult_BmrTitle"
+            android:textAlignment="center"
+            android:textColor="@color/dark" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/fragBMRResult_bmrResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/ZeroZero"
+                android:textColor="@color/dark"
+                android:textSize="62dp" />
+
+            <TextView
+                android:id="@+id/fragBMRResult_bmtUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/CalDay"
+                android:textColor="@color/dark"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragBMRResult_LayoutDecision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/elevation_shadow_background_light"
+        android:orientation="vertical"
+        android:elevation="5dp"
+
+        android:paddingVertical="15dp">
+
+        <TextView
+            android:id="@+id/fragBMRResult_decisionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragBMRResult_decisionTitle"
+            android:textAlignment="center"
+            android:textColor="@color/dark" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:gravity="center"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fragBMRResult_btnLoseOFF"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/fragBMRResult_btnLose"
+                android:visibility="visible"
+                app:strokeColor="@color/primary" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fragBMRResult_btnLoseON"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/primary"
+                android:text="@string/fragBMRResult_btnLose"
+                android:textColor="@color/light"
+                android:visibility="gone"
+                app:strokeColor="@color/primary" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fragBMRResult_btnStayOFF"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/fragBMRResult_btnStay"
+                android:visibility="gone"
+                app:strokeColor="@color/primary" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fragBMRResult_btnStayON"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/primary"
+                android:text="@string/fragBMRResult_btnStay"
+                android:textColor="@color/light"
+                android:visibility="visible"
+                app:strokeColor="@color/primary" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fragBMRResult_btnGainON"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/primary"
+                android:text="@string/fragBMRResult_btnGain"
+                android:textColor="@color/light"
+                android:visibility="visible"
+                app:strokeColor="@color/primary" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fragBMRResult_btnGainOFF"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/fragBMRResult_btnGain"
+                android:visibility="visible"
+                app:strokeColor="@color/primary" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fragBMRResult_decisionFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragBMRResult_decisionFooter"
+            android:textAlignment="center"
+            android:textColor="@color/dark" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fragBMRResult_LayoutResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/elevation_shadow_background_light"
+        android:orientation="vertical"
+        android:elevation="5dp"
+        android:paddingVertical="15dp"
+        >
+
+        <TextView
+            android:id="@+id/fragBMRResult_resultTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragBMRResult_resultTitle"
+            android:textAlignment="center"
+            android:textColor="@color/dark" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/fragBMRResult_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/ZeroZero"
+                android:textColor="@color/dark"
+                android:textSize="72dp" />
+
+            <TextView
+                android:id="@+id/fragBMRResult_resultUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/CalDay"
+                android:textColor="@color/dark"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fragBMRResult_resultFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/fragBMRResult_resultFooter"
+            android:textAlignment="center"
+            android:textColor="@color/dark" />
+    </LinearLayout>
+</LinearLayout>

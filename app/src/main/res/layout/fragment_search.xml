@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+
+        android:id="@+id/layout_searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/background_dark_border_radius_primary"
+
+        android:orientation="horizontal"
+
+        android:paddingBottom="10dp">
+
+        <ImageButton
+            android:id="@+id/searchFrag_speachToTextIBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_mic_black_24dp" />
+
+        <EditText
+            android:layout_margin="1dp"
+            android:id="@+id/searchFrag_queryET"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_borderradius_background"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <ImageButton
+            android:id="@+id/searchFrag_searchIBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_search_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/searchFrag_cameraIBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_camera_alt_black_24dp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_dark_border_radius_primary"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/searchFrag_summaryTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/searchFrag_summary"
+            android:textAlignment="textEnd"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/searchFrag_summaryResultTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="2dp"
+            android:text="@string/lsit_row_calories"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+        android:scrollbarThumbVertical="@color/primary">
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/searchFrag_NutrionixRecivedDataLV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingBottom="8dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:visibility="invisible"
+            android:divider="@color/dark"
+            android:dividerHeight="1px">
+
+        </com.baoyz.swipemenulistview.SwipeMenuListView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/list_row_image_description"
+        android:padding="8dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:id="@+id/rowDataPresentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/rowTitleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/lsit_row_title"
+                android:textColor="@color/dark"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowDetailsDataContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/rowDetailsWightDataLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rowServingDataLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtServingQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="2dp"
+                        android:text="@string/lsit_row_serving_quantity"
+                        android:textColor="@color/dark" />
+
+                    <TextView
+                        android:id="@+id/txtServingUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:text="@string/list_row_serving_unit"
+                        android:textColor="@color/dark" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rowGramsLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtServingGrams"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="2dp"
+                        android:text="@string/lsit_row_serving_grams"
+                        android:textColor="@color/light" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowCaloriesLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtCalories"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="2dp"
+                    android:text="@string/lsit_row_calories"
+                    android:textColor="@color/primary"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

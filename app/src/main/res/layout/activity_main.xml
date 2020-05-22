@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMainBacground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacground_xhdpi"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutMainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="267dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layoutLeftTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_DayOfWeek"
+                    android:layout_width="205dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="96dp"
+                    android:fontFamily="@font/font_orbitron_bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/fontColorPrimary"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:id="@+id/layoutWeather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_Temperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/font_orbitron_regural"
+                        android:text="@string/temerature_default_value"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/fontColorPrimary"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_WeatherIco"
+                        android:layout_width="39dp"
+                        android:layout_height="39dp"
+                        android:contentDescription="@string/contentDescription_weatherIco"
+                        app:srcCompat="@drawable/weather_snow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutRightTop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_Avatar"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/layout_menu_user_avatar"
+                    app:srcCompat="@mipmap/ic_launcher_round"
+                    tools:srcCompat="@tools:sample/avatars[2]" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center">
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/circularProgressBar"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    app:cpb_background_progressbar_color="@color/colorPrimaryDark"
+                    app:cpb_background_progressbar_width="25dp"
+                    app:cpb_progress_direction="to_right"
+                    app:cpb_progressbar_color="@color/colorPrimary"
+                    app:cpb_progressbar_width="25dp"
+                    app:cpb_round_border="true" />
+
+                <TextView
+                    android:id="@+id/tv_CaloriesConsumed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/font_orbitron_regural"
+                    android:text="00.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/fontColorPrimary"
+                    android:textSize="36sp" />
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_NavigationLeft"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/button_left_arrow"
+                android:onClick="btn_NavigationLeftOnClick"
+                android:gravity="center_horizontal"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/btn_ShowMenu"
+                android:layout_width="64dp"
+                android:clickable="true"
+                android:layout_height="64dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_plus"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="btn_ShowMenuOnClick"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/btn_NavigationRight"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/button_right_arrow"
+                android:gravity="center_horizontal"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="150dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/layout_menu_bacground"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layoutMenuTopText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibtn_SpeachToText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_alpha_100percent"
+                android:contentDescription="@string/layout_menu_microphone_button"
+                android:onClick="btn_SpeechToTextOnClick"
+                app:srcCompat="@drawable/button_microphone_32px" />
+
+            <EditText
+                android:id="@+id/et_InputCaloriesData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:fontFamily="@font/font_orbitron_regural"
+                android:hint="@string/layout_menu_input_calories_data"
+                android:inputType="textPersonName"
+                android:textColor="@color/fontColorDark"
+                android:textColorHighlight="@color/fontColorPrimary"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+            <ImageButton
+                android:id="@+id/ibtn_SearchInNutritionix"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/color_alpha_100percent"
+                android:contentDescription="@string/layout_menu_search_nutritionix"
+                android:onClick="searchInNutritionixOnClick"
+                android:paddingLeft="0dp"
+                app:srcCompat="@drawable/button_magnifying_glass_32px" />
+
+            <ImageButton
+                android:id="@+id/ibtn_CustomVision"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_alpha_100percent"
+                android:contentDescription="@string/layout_menu_camera"
+                android:onClick="customVisionOnClick"
+                app:srcCompat="@drawable/button_photo_camera_32px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutMenuBottomData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_CaloriesSumOutput"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:layout_gravity="start"
+                android:layout_weight="5"
+                android:fontFamily="@font/font_orbitron_regural"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/layout_menu_sum_calories"
+                android:textColor="@color/fontColorDark"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/ibtn_AddCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|end"
+                android:layout_marginEnd="0dp"
+
+                android:layout_weight="1"
+                android:background="@color/color_alpha_100percent"
+                android:contentDescription="@string/layout_menu_add_calories"
+                android:onClick="addCaloriesOnClick"
+                app:srcCompat="@drawable/button_check_32px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutListDataPresent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.baoyz.swipemenulistview.SwipeMenuListView
+                android:id="@+id/lv_NutrionixRecivedData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                tools:visibility="invisible">
+
+            </com.baoyz.swipemenulistview.SwipeMenuListView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
