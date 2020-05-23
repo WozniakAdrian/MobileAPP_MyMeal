@@ -19,6 +19,13 @@ This project was motivated by creating app witch help can I control what i eat a
 
 
 ## Screenshots
+<p align="center">
+ <img src="./screen_mymeal2.gif" data-canonical-src="./2.jpg" width="180" height="400" />
+ <img src="./screen_mymeal1.gif" data-canonical-src="./2.jpg" width="180" height="400" />
+ <img src="./7.gif" data-canonical-src="./1.jpg" width="180" height="400" />
+</p>
+
+
 1. Login:
 <p align="center">
  <img src="./6.jpg" data-canonical-src="./6.jpg" width="180" height="400" />
