@@ -9,7 +9,6 @@ or what should not eat.
 * [Setup](#setup)
 * [Features](#features)
 * [Status](#status)
-* [Inspiration](#inspiration)
 * [Contact](#contact)
 * [Credentials](#credentials)
 
@@ -57,14 +56,37 @@ This project was motivated by creating app witch help can I control what i eat a
 * MaterialDesign
 
 ## Setup
-1. First step:
- Create and configure Firebase. 
-  *You should 
+1. Firebase:
+ *Create and configure Firebase Auth and realtime database
+ *Add application to Firebase project
+ *Download google-service.json and put it into project
+2. Nutrition
+ *Create account
+ *Generate API keys
+3. Current weather 
+ *Create account
+ *Generate API keys
+4. Application
+ *Create new file apikeys.xml in values
+ *Copy paste code below and insert yours data
+ 
+```xml
 
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- NUTRITIONIX API -->
+   <string name="x_app_id">APP_ID</string>
+   <string name="x_app_key">API_KEY</string>
+   <string name="x_remote_user_id">USER</string>
+   <string name="timezone">US/Eastern</string>
 
-## Code Examples
-Show examples of usage:
-`put-your-code-here`
+   <!-- WEATHER API / SERVICE  -->
+   <string name="APPID">API_KEY</string>
+   <string name="period_weather_api_call_in_seconds">REFRESH</string>
+</resources>
+```
+
+5. Voilà its is working :)
 
 ## Features
 * Calculate BMR
@@ -82,16 +104,13 @@ What can be improved:
 ## Status
 Not longer continued, because it was created without any framework. Now  I wont to focus on learning new awesome form of write apps with those freamewworks.
 
-## Inspiration
-...
-
 ## Credentials
->https://openweathermap.org/ - Current weather
->https://www.nutritionix.com/ - Nutrition facts
->https://github.com/hdodenhof/CircleImageView - Circle image 
->https://github.com/square/picasso - Image downloader 
->https://github.com/baoyongzhang/SwipeMenuListView - Swipe menu list
->https://github.com/lopspower/CircularProgressBar - Circular progress bar
+>https://openweathermap.org/ - Current weather </br>
+>https://www.nutritionix.com/ - Nutrition facts </br>
+>https://github.com/hdodenhof/CircleImageView - Circle image </br>
+>https://github.com/square/picasso - Image downloader </br>
+>https://github.com/baoyongzhang/SwipeMenuListView - Swipe menu list </br>
+>https://github.com/lopspower/CircularProgressBar - Circular progress bar </br>
 
 ## Contact
 Feel free to contact Adrian Wozniak (adrianwozniak576@gmail.com)
