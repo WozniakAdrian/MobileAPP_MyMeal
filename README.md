@@ -15,8 +15,7 @@ or what should not eat.
 
 
 ## General info
-This project was motivated by creating app witch help can I control what i eat and how often do i eat snack. I created simple to read and use user interface to save time. User after first login into this app should calculate his BMR level. When it is done this app can calculate all nutriens and calories daily demand. With simple search, all foods can be check before consume and easli add to consumed list. Simple main UI can be easly readed and with thats prezent fact user can decide what should he eat or what should not. Application is based on user accounts witch is created and administrated on Firebase cloud platform where also is stored user data. All nutrition fact are here from Nutritionix.com. 
-
+This project was motivated by creating app witch help can I control what i eat and how often do i eat snack. I created simple to read and use user interface to save time. User after first login into this app should calculate his BMR level. When it is done this app can calculate all nutriens and calories daily demand. With simple search, all foods can be check before consume and easli add to consumed list. Simple main UI can be easly readed and with thats prezent fact user can decide what should he eat or what should not. Application is based on user accounts witch is created and administrated on Firebase cloud platform where also is stored user data. 
 
 ## Screenshots
 <p align="center">
